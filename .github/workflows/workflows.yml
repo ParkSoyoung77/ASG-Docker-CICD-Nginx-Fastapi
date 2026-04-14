@@ -59,7 +59,7 @@ jobs:
         run: |
           aws ssm send-command \
             --document-name "AWS-RunShellScript" \
-            --targets "Key=tag:Namespace,Values=st7-asg" \
+            --targets "Key=tag:Namespace,Values=st8-Chicken-ASG" \
             --comment "Deploying Nginx and FastAPI with SHA: $SHA" \
             --parameters '{
                 "commands": [
